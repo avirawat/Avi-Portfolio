@@ -2,10 +2,15 @@
 
 <html>
 	<head>
-		<title> Avinash Rawat </title>
+		<title>Avinash Rawat - Full Stack Developer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Full Stack Web Developer specializing in modern web technologies" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/modern.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -20,18 +25,64 @@
 			</nav>
 
 		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
+			<article id="top" class="wrapper style1 modern-hero">
+				<canvas id="particles-canvas"></canvas>
+				<div class="gradient-overlay"></div>
+				<div class="container hero-container">
+					<div class="row align-items-center">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/avi.jpg" alt=""/></span>
+							<div class="profile-image-wrapper animate-fade-in">
+								<div class="profile-ring"></div>
+								<img src="images/profile.JPG" alt="Avinash Rawat" class="profile-image"/>
+								<div class="status-badge">
+									<span class="status-dot"></span>
+									<span class="status-text">Available for work</span>
+								</div>
+							</div>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<br><br><h1>Hi. I'm <strong>Avinash Rawat</strong>.</h1>
-							</header>
-							<p>I am <strong> Web developer </strong>(Full-stack-developer) , Check out my works <a href="https://labour-welfare.000webhostapp.com/">click here</a></p>
-							<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+							<div class="hero-content animate-slide-up">
+								<div class="greeting-badge">
+									<span class="wave-emoji">👋</span>
+									<span>Hello, I'm</span>
+								</div>
+								<h1 class="hero-title">
+									<span class="gradient-text">Avinash Rawat</span>
+								</h1>
+								<div class="typing-container">
+									<span class="typing-prefix">I'm a </span>
+									<span class="typing-text"></span>
+									<span class="typing-cursor">|</span>
+								</div>
+								<p class="hero-description">
+									Full Stack Developer crafting beautiful, functional web experiences. 
+									Specializing in modern web technologies and scalable solutions.
+								</p>
+								<div class="tech-stack">
+									<span class="tech-item">JAVA</span>
+									<span class="tech-item">Spring Boot</span>
+									<span class="tech-item">JavaScript</span>
+									<span class="tech-item">Angular</span>
+									<span class="tech-item">MySQL</span>
+									<span class="tech-item">Hibernate</span>
+									<span class="tech-item">REST API</span>
+								</div>
+								<div class="hero-buttons">
+									<a href="#portfolio" class="btn-primary scrolly">
+										<span>View My Work</span>
+										<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+											<path d="M5 12h14M12 5l7 7-7 7"/>
+										</svg>
+									</a>
+									<a href="#contact" class="btn-secondary scrolly">
+										<span>Get In Touch</span>
+									</a>
+								</div>
+								<div class="scroll-indicator">
+									<span class="scroll-text">Scroll to explore</span>
+									<div class="scroll-arrow"></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -46,6 +97,12 @@
 						
 					</header>
 					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://www.graebert.com/" class="image featured"><img src="images/graebertlogo.png" alt="" /></a>
+								<h3><a href="https://www.graebert.com/">Graebert India (Licensing)</a></h3>
+							</article>
+						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="https://www.jti.com/" class="image featured"><img src="images/Jti.jpg" alt="" /></a>
@@ -77,13 +134,6 @@
 					<hr>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span> <i class="fab fa-react fa-10x"></i></span>
-								<h3>Working On Reactjs</h3>
-								<p>Recently I am learning ReactJs base project.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="https://avirawat.github.io/E-Commerce/" class="image featured"><img src="images/cart.png" alt="" /></a>
 								<h3><a href="https://avirawat.github.io/E-Commerce/">E-Commerce Site</a></h3>
@@ -92,27 +142,12 @@
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<a href="#" class="image featured"><img src="images/Faw Portal.png" alt="" /></a>
-								<h3>Farming Web Portal</h3>
-								<p>Recently I am working on this topic for Final Year Project.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="https://ayodhya-darshan.blogspot.com/" class="image featured"><img src="images/page.png" alt="" /></a>
 								<h3><a href="https://ayodhya-darshan.blogspot.com/">अयोध्या दर्शन(Blog)</a></h3>
 								<p>अयोध्या मथुरा माया काशी काञ्ची अवन्तिका । पुरी द्वारावती चैव सप्तैता मोक्षदायिका:॥</p>
 								<p>check It out... I update daily.</p>
 							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<a href="https://file-accept.000webhostapp.com/" class="image featured"><img src="images/file.jpg" alt="" /></a>
-								<h3><a href="https://file-accept.000webhostapp.com/">File Calculator</a></h3>
-								<p>Here we can calculate the size of files and store for future requirements.</p>
-								
-							</section>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
@@ -138,16 +173,6 @@
 								<p>For more details go through above link.</p>
 							</article>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<h3><a href="https://labour-welfare.000webhostapp.com/">Labour Welfare Login Page</a></h3>
-								<p>Purpose to create this site is simple,Here We will provide sign-up form for creating Unique Id basis on their 
-								work experiences,where contractors will hire basis on skills of workers,All the payment process will go through site
-								for labours within time..</p>
-							</article>
-						</div>
-						
-						
 					</div>
 					<footer>
 						
@@ -160,268 +185,23 @@
 			<article id="work" class="wrapper style2">
 				<div class="container">
 					<header>
-						<h2>Here's some stuffs I travelled.</h2>
-						<p></p>
+						<h2>My Travel Journey Across India</h2>
+						<p>Click on any state to explore the places I've visited</p>
 					</header>
-					<div class="row">
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/ayodhya.jpg" alt="" /></a>
-								<h3>AYODHYA</h3>
-								<p>Birth Place of Shri Ram Ji (Ram Ki Paidi).</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/kerla.jpg" alt="" /></a>
-								<h3>KERALA</h3>
-								<p>Manchester of India (Neillampathy ).</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/aaliyar.jpg" alt="" /></a>
-								<h3>Aliyar Reservoir</h3>
-								<p> Reservoir located in Aliyar village near Pollachi town in Coimbatore .</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/delhi.jpg" alt="" /></a>
-								<h3>DELHI</h3>
-								<p>Qutub Minar.</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/eshayoga.jpg" alt="" /></a>
-								<h3>Isha Yoga Center </h3>
-								<p>Meditation Centre (Coimbatore).</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/kk.jpg" alt="" /></a>
-								<h3>KANYAKUMARI</h3>
-								<p>Kanyakumari Beach.</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/haidwar.jpg" alt="" /></a>
-								<h3>HARIDWAR</h3>
-								<p>Rishikesh,Mansa Devi,Chandi Devi</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/ramoji.jpg" alt="" /></a>
-								<h3>Ramo Ji FilmCity</h3>
-								<p>Hyderabad</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/mysore.jpg" alt="" /></a>
-								<h3>Mysore</h3>
-								<p>Mysore Fort</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/madurai.jpg" alt="" /></a>
-								<h3>MADURAI</h3>
-								<p>Minakshi Temple</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/mayilathudurai.jpg" alt="" /></a>
-								<h3>Mayiladuthurai Kornadu</h3>
-								<p>Lake</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/20190126_154148.jpg" alt="" /></a>
-								<h3>Golden Temple</h3>
-								<p>Coorg Karnatka</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/IMG-20190127-WA0005.jpg" alt="" /></a>
-								<h3>Coorg</h3>
-								<p>Karnatka</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/IMG20201007171931.jpg" alt="" /></a>
-								<h3>JK Temple</h3>
-								<p>Kanpur</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/waterfall.jpg" alt="" /></a>
-								<h3>Nagarcoil</h3>
-								<p>Tirparappu Water Falls</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/IMG20210811202329.jpg" alt="" /></a>
-								<h3>Charminar</h3>
-								<p>Hyderabad</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/tankbund.jpg" alt="" /></a>
-								<h3>Tank Bund Buddha</h3>
-								<p>Hyderabad</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/resort.jpg" alt="" /></a>
-								<h3>Green Field Resort</h3>
-								<p>Hyderabad</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/kota.jpg" alt="" /></a>
-								<h3>Kota (Seven Wonder)</h3>
-								<p>Rajasthan</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/gangaBairaz.jpg" alt="" /></a>
-								<h3>Ganga Bairaz</h3>
-								<p>Kanpur</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/ananthgiriHills.jpg" alt="" /></a>
-								<h3>Ananthgiri Hills Camping</h3>
-								<p>Hyderbad</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/WonderleHyd.jpg" alt="" /></a>
-								<h3>Wonderla Hyd</h3>
-								<p>Hyderbad</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Kashi.jpg" alt="" /></a>
-								<h3>Ganga Aarti at Varanasi Ghat</h3>
-								<p>Varanasi(Banaras)</p>
-							</article>
-						
-						
-						
-						</div>
-							<div class="col-4 col-1-medium col-12-small">
-							<article class="box style1">
-								<a href="#" class="image featured"><img src="images/warangal.jpg" alt="" /></a>
-								<h3>Ramappa Lake </h3>
-								<p>Warangal(Telangana)</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Kemptyfall.jpg" alt="" /></a>
-								<h3>Kempty Fall (Mussorie)</h3>
-								<p>Mussorie (Uttarakhand)</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Company.jpg" alt="" /></a>
-								<h3>Company Baag (Mussorie)</h3>
-								<p>Mussorie (Uttarakhand)</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Rishikesh.jpg" alt="" /></a>
-								<h3>Tapovan (Rishikesh)</h3>
-								<p>Rishikesh (Uttarakhand)</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/TriveniGhat.jpg" alt="" /></a>
-								<h3>Ganga Aarti (Triveni Ghat)</h3>
-								<p>Rishikesh (Uttarakhand)</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Jnv.jpg" alt="" /></a>
-								<h3>JNV Faizabad (Ayodhya)</h3>
-								<p>Jawahar Navodaya Vidyaaya Ayodhya</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Laxman.jpg" alt="" /></a>
-								<h3>Laxman Jhhula (Rishikesh)</h3>
-								<p>Rishikesh (Uttarakhand)</p>
-							</article>
-						</div>
-						
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/Deepotsav.jpg" alt="" /></a>
-								<h3>Deepotsav 2022 (Ayodhya)</h3>
-								<p>Ram ki paidhi Ayodhya</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/FB_IMG_1664904118649.jpg" alt="" /></a>
-								<h3>Golkunda Fort</h3>
-								<p>Hyderabad</p>
-							</article>
-						</div>
-						<div class="col-4 col-1-medium col-12-small">
-							<article class="box style2">
-								<a href="#" class="image featured"><img src="images/bridge2023.jpg" alt="" /></a>
-								<h3>Durgam Cherruv Cable bridge(Madhapur)</h3>
-								<p>New Year Celebration 2023</p>
-							</article>
-						</div>
-			
-					</div>
-					<footer>
-						
+					
+					<!-- Interactive State Cards Container -->
+					<div id="travel-states-container"></div>
+					
+					<footer style="margin-top: 3rem;">
 						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-	
 					</footer>
 				</div>
 			</article>
 
-		<!-- Contact -->
+			<!-- Contact -->
 			<article id="contact" class="wrapper style4">
 				<div class="container medium">
 					<header>
-						<h2>Get me message As soon I will reply.</h2>
 						
 					</header>
 					<div class="row">
@@ -508,32 +288,11 @@
 			<script src="\dev3\assets\js\breakpoints.min.js"></script>
 			<script src="\dev3\assets\js\util.js"></script>
 			<script src="\dev3\assets\js\main.js"></script>
-		
+			<script src="assets/js/modern.js"></script>
+			<script src="assets/js/travel-states.js"></script>
+	
 			<script data-cfasync="false" type="text/javascript"
   			src="form-submission-handler.js"></script>
 
 	</body>
 </html>
-<!-- <div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-								<div class="thankyou_message" style="display:none;">
-								      <h2><em>Thanks</em> for contacting us!
-									We will get back to you soon!</h2>
-								 </div>
-							</form> -->

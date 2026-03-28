@@ -83,23 +83,47 @@
       xhr.open('POST', url);
       // xhr.withCredentials = true;
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      
       xhr.onreadystatechange = function() {
-          console.log(xhr.status, xhr.statusText);
-          console.log(xhr.responseText);
-          var formElements = form.querySelector(".form-elements")
-          if (formElements) {
-            formElements.style.display = "none"; // hide form
+          console.log('ReadyState:', xhr.readyState, 'Status:', xhr.status, xhr.statusText);
+          if (xhr.readyState === 4) {
+            console.log('Response:', xhr.responseText);
+            if (xhr.status === 200 || xhr.status === 0) {
+              var formElements = form.querySelector(".form-elements");
+              if (formElements) {
+                formElements.style.display = "none"; // hide form
+              }
+              var thankYouMessage = form.querySelector(".thankyou_message");
+              if (thankYouMessage) {
+                thankYouMessage.style.display = "block";
+              }
+            } else {
+              console.error('Form submission failed:', xhr.status, xhr.statusText);
+              alert('There was an error submitting the form. Please try again or email directly at avinashsinghaniya1048@gmail.com');
+              // Re-enable buttons on error
+              var buttons = form.querySelectorAll("button, input[type=submit]");
+              for (var i = 0; i < buttons.length; i++) {
+                buttons[i].disabled = false;
+              }
+            }
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
-          }
-          return;
       };
+      
+      xhr.onerror = function() {
+          console.error('Network error occurred');
+          alert('Network error. Please check your connection or email directly at avinashsinghaniya1048@gmail.com');
+          // Re-enable buttons on error
+          var buttons = form.querySelectorAll("button, input[type=submit]");
+          for (var i = 0; i < buttons.length; i++) {
+            buttons[i].disabled = false;
+          }
+      };
+      
       // url encode form data for sending as post data
       var encoded = Object.keys(data).map(function(k) {
           return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
       }).join('&');
+      console.log('Sending form data:', encoded);
       xhr.send(encoded);
     }
   }
@@ -115,7 +139,7 @@
   document.addEventListener("DOMContentLoaded", loaded, false);
 
   function disableAllButtons(form) {
-    var buttons = form.querySelectorAll("button");
+    var buttons = form.querySelectorAll("button, input[type=submit]");
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
